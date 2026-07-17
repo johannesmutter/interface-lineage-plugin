@@ -1,0 +1,15 @@
+{
+  "name": "interface-lineage",
+  "owner": {
+    "name": "Interface Lineage",
+    "email": "hello@interfacelineage.com"
+  },
+  "plugins": [
+    {
+      "name": "interface-lineage",
+      "source": "./plugins/interface-lineage",
+      "description": "Query the Interface Lineage corpus over MCP, and skills for exploring a design's lineage, citing sources, and reading the edge vocabulary.",
+      "version": "1.0.0"
+    }
+  ]
+}
