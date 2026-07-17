@@ -27,7 +27,7 @@ claude mcp add --transport http interface-lineage https://interfacelineage.com/m
 
 # with member access
 claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp \
-  --header "Authorization: Bearer il_your_token_here"
+  --header "Authorization: Bearer YOUR_TOKEN"
 ```
 
 For Claude Desktop or any other host, add an HTTP MCP server pointing at
