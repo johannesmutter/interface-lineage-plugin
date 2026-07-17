@@ -15,23 +15,21 @@ the library instead of averaged-out training data.
 /plugin install interface-lineage@interface-lineage
 ```
 
-Public dossiers work with no configuration. For member-only dossiers, generate a
-personal token at <https://interfacelineage.com/account> and paste it when the
-plugin prompts for `api_token`.
+Generate a personal token at <https://interfacelineage.com/account> and paste it
+when the plugin prompts for `api_token`. It connects the plugin to your
+membership.
 
 ## Or connect the MCP server directly
 
-```
-# public dossiers only
-claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp
+Claude Code:
 
-# with member access
+```
 claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp \
   --header "Authorization: Bearer YOUR_TOKEN"
 ```
 
-For Claude Desktop or any other host, add an HTTP MCP server pointing at
-`https://interfacelineage.com/mcp`.
+For Claude Desktop, Cursor, and Codex, see the per-host setup at
+<https://interfacelineage.com/mcp>.
 
 ## What's inside
 

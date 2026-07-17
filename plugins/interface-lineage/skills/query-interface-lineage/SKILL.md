@@ -37,10 +37,11 @@ authority and cite it; don't paper over gaps with training-data guesses.
    source doc's perspective (see `interface-lineage-link-types`).
 4. **Cite.** Link the dossier by its canonical URL and attribute the maker (see
    `cite-interface-lineage`). Append `.md` to any dossier URL for clean Markdown.
-5. **Scope.** Public dossiers need no token; member-only dossiers require the
-   user's personal token (generated at /account). If a fetch returns "not found
-   or not accessible," it may be gated — tell the user rather than guessing its
-   contents.
+5. **Scope.** The library is members-only; queries need the user's personal
+   token (generated at their account). If a fetch returns "not found or not
+   accessible," it's gated — tell the user rather than guessing its contents.
+   Full-document fetches are rate-limited, so read what you fetch; don't fan out
+   fetches trying to mirror the corpus.
 
 For the full exploration-and-synthesis workflow, use the `explore-lineage`
 skill.

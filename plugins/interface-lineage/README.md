@@ -12,26 +12,25 @@ averaged-out training data.
 /plugin install interface-lineage@interface-lineage
 ```
 
-Public dossiers work with no configuration. To reach member-only dossiers,
-generate a personal token at <https://interfacelineage.com/account> and paste it
-when the plugin prompts for `api_token` (or set it later in plugin settings).
+(The marketplace lives at the repo root; to distribute publicly, copy
+`plugins/interface-lineage` and `.claude-plugin/marketplace.json` into a
+standalone public repo.)
+
+Generate a personal token at <https://interfacelineage.com/account> and paste it
+when the plugin prompts for `api_token` (or set it later in plugin settings). It
+connects the plugin to your membership.
 
 ## Connect without the plugin
 
-The MCP endpoint is a plain remote server; any host can use it.
+The MCP endpoint is a plain remote server; any host can use it. Claude Code:
 
 ```
-# public dossiers only
-claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp
-
-# with member access
 claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp \
   --header "Authorization: Bearer YOUR_TOKEN"
 ```
 
-For Claude Desktop or other hosts, add an HTTP MCP server pointing at
-`https://interfacelineage.com/mcp` and send your token as
-`Authorization: Bearer <token>
+For Claude Desktop, Cursor, and Codex, see the per-host setup at
+<https://interfacelineage.com/mcp>.
 
 ## What's inside
 
@@ -43,7 +42,7 @@ For Claude Desktop or other hosts, add an HTTP MCP server pointing at
 | `fetch` | The full dossier as Markdown, plus its lineage. |
 | `get_lineage` | The explicit typed influence edges for a dossier. |
 | `find_related` | Designs similar in feel that aren't already linked. |
-| `list_catalog` | Browse a whole category (interfaces, principles, people, …). |
+| `list_catalog` | Sample a category (interfaces, principles, people, …). |
 
 **Skills**
 
@@ -59,6 +58,6 @@ that surface MCP prompts get the same workflow without installing the skills.
 
 ## Privacy & scope
 
-The tools are read-only. A token scopes results to exactly what its owner can
-see on the website — no token means public dossiers only. Tokens are revocable
-at <https://interfacelineage.com/account>.
+The tools are read-only, rate-limited to prevent bulk export, and scope results
+to exactly what the token's owner can see on the website. Tokens are revocable
+(regenerate) at <https://interfacelineage.com/account>.
