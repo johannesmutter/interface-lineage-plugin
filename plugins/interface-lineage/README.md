@@ -30,7 +30,7 @@ claude mcp add --transport http interface-lineage https://interfacelineage.com/m
 ```
 
 For Claude Desktop, Cursor, and Codex, see the per-host setup at
-<https://interfacelineage.com/mcp>.
+<https://interfacelineage.com/connect>.
 
 ## What's inside
 
