@@ -10,18 +10,22 @@ the library instead of averaged-out training data.
 
 ## Install
 
+First, generate a personal token at <https://interfacelineage.com/account> (open
+the MCP access section and press copy). You'll paste it during install.
+
+Then, **inside Claude Code** — these are slash commands typed at the Claude Code
+prompt, not in your terminal:
+
 ```
 /plugin marketplace add johannesmutter/interface-lineage-plugin
 /plugin install interface-lineage@interface-lineage
 ```
 
-Generate a personal token at <https://interfacelineage.com/account> and paste it
-when the plugin prompts for `api_token`. It connects the plugin to your
-membership.
+The install prompts for `api_token`; paste the token from step one.
 
 ## Or connect the MCP server directly
 
-Claude Code:
+Without the plugin, **in your terminal**:
 
 ```
 claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp \

@@ -12,17 +12,17 @@ averaged-out training data.
 /plugin install interface-lineage@interface-lineage
 ```
 
-(The marketplace lives at the repo root; to distribute publicly, copy
-`plugins/interface-lineage` and `.claude-plugin/marketplace.json` into a
-standalone public repo.)
+The two lines above are slash commands typed **inside Claude Code**, at its
+prompt — not in your terminal.
 
-Generate a personal token at <https://interfacelineage.com/account> and paste it
-when the plugin prompts for `api_token` (or set it later in plugin settings). It
-connects the plugin to your membership.
+Generate a personal token at <https://interfacelineage.com/account> (open the MCP
+access section and press copy) and paste it when the plugin prompts for
+`api_token`. It connects the plugin to your membership.
 
 ## Connect without the plugin
 
-The MCP endpoint is a plain remote server; any host can use it. Claude Code:
+The MCP endpoint is a plain remote server; any host can use it. **In your
+terminal**, for Claude Code:
 
 ```
 claude mcp add --transport http interface-lineage https://interfacelineage.com/mcp \
