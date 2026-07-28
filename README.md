@@ -19,9 +19,13 @@ prompt, not in your terminal:
 ```
 /plugin marketplace add johannesmutter/interface-lineage-plugin
 /plugin install interface-lineage@interface-lineage
+/reload-plugins
 ```
 
-The install prompts for `api_token`; paste the token from step one.
+Run them one at a time, waiting for each to finish. The install prompts for
+`api_token`; paste the token from step one. `/reload-plugins` activates the
+plugin in the session you are already in — without it the tools show up only
+after a restart.
 
 ## Or connect the MCP server directly
 
