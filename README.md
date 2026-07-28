@@ -23,9 +23,11 @@ prompt, not in your terminal:
 ```
 
 Run them one at a time, waiting for each to finish. The install prompts for
-`api_token`; paste the token from step one. `/reload-plugins` activates the
-plugin in the session you are already in — without it the tools show up only
-after a restart.
+`api_token`; paste the token from step one.
+
+A session fixes its list of tools when it starts, so the one you installed from
+still shows none. `/reload-plugins` pulls in the new list. In the Claude desktop
+app that command isn't available — open a new chat instead.
 
 ## Or connect the MCP server directly
 
