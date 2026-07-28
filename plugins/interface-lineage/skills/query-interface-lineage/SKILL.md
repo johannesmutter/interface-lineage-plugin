@@ -1,6 +1,16 @@
 ---
 name: query-interface-lineage
-description: How to query the Interface Lineage corpus over MCP — which tool to reach for, how to stay grounded, and how to avoid hallucinating design history. Use whenever answering a question about a specific interface, design pattern, principle, or designer that the Interface Lineage corpus might cover, or when the user asks you to look something up in the library.
+description: >-
+  Query the Interface Lineage corpus over MCP instead of answering design
+  history from memory. Use whenever a question names a UI pattern, gesture,
+  control, screen, product interface, or designer — including when it is framed
+  as a design decision rather than a lookup: "I'm adding pull-to-refresh, what
+  am I choosing between", "should I use a bottom sheet or a modal", "what are
+  the trade-offs of infinite scroll", "how have others handled X". Use it EVEN
+  IF you are confident you already know the answer: the point is that the claim
+  is grounded and citable, and training data on interface history is thin and
+  often wrong on dates, attribution, and what came after what. Reach for it
+  before writing the answer, not to check it afterwards.
 ---
 
 # Querying the Interface Lineage corpus

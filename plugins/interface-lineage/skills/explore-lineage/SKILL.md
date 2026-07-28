@@ -1,6 +1,16 @@
 ---
 name: explore-lineage
-description: Explore a design through the Interface Lineage corpus — pull its acknowledged lineage AND its unlinked cousins, then synthesize the tension and pose generative design questions. Use when the user is designing something and wants grounded precedent, asks "what came before / what's related to X", "how have others solved this", or wants to think through a design move against real examples instead of averaged-out training data. Requires the Interface Lineage MCP (search / fetch / get_lineage / find_related).
+description: >-
+  Explore a design through the Interface Lineage corpus — pull its acknowledged
+  lineage AND its unlinked cousins, then synthesize the tension and pose
+  generative design questions. Use when someone is designing something and wants
+  grounded precedent, asks "what came before X", "what's related to X", "how
+  have others solved this", or is weighing a design move and would be better
+  served by real examples than by an averaged-out answer. Prefer this over a
+  plain search-and-read whenever the question is about a CHOICE: the lineage and
+  the unlinked cousins are what make the trade-off visible, and neither is
+  reachable by search alone. Requires the Interface Lineage MCP (search / fetch /
+  get_lineage / find_related / get_stills).
 ---
 
 # Explore a design's lineage
