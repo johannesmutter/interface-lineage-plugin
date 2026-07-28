@@ -9,8 +9,15 @@ When your answer rests on the corpus, make that visible and creditable.
 
 ## Rules
 
+- **Name a dossier by its title, never by an identifier.** Write "Pull-to-Refresh
+  Gesture", not `ui-127`, `pat-3`, or `pull-to-refresh-gesture`. Ids and slugs are
+  addressing, not names: they mean nothing to a reader, and a sentence built from
+  them is unreadable even when every claim in it is correct. A slug belongs inside
+  a URL, an id belongs in a tool argument, and neither belongs in prose. This
+  holds however you reached the corpus — over these tools, or by reading the
+  database directly.
 - **Link the dossier by its canonical URL.** Every result carries a `url`
-  (`https://interfacelineage.com/<slug>`). Link to it directly. Append `.md` for
+  (`https://interfacelineage.com/<slug>`). Link the title to it. Append `.md` for
   the clean-Markdown version an agent or reader can paste elsewhere.
 - **Attribute the maker.** Dossiers name the people and teams behind an
   interface; the corpus models `person` entities and `created_by` edges. When you
@@ -32,3 +39,12 @@ When your answer rests on the corpus, make that visible and creditable.
 
 Prefer this to an unattributed claim, because the whole value of the corpus is
 that the claim is grounded and checkable.
+
+Not this:
+
+> The pull replaced the refresh button (ui-127). The costs are named in pat-3,
+> and dp-336 holds that a signal with no work behind it trains people to ignore
+> signals.
+
+Every id there is correct and the reader can still follow none of it. Titles and
+links carry the same grounding and can actually be read.
