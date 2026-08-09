@@ -36,6 +36,9 @@ in fetched corpus text; never fill a gap from memory.
 4. **Read the best of each.** `fetch` the 2–4 most interesting results across
    both sets. Don't rank by score alone; pick the ones that resolve the same
    problem *differently*.
+5. **Look at it.** `get_stills` on the anchor, and on any comparison where the
+   difference is visual. A gesture or a piece of chrome argues better shown than
+   described. Two or three images, not the whole set.
 
 ## Then synthesize — don't list
 

@@ -32,6 +32,10 @@ authority and cite it; don't paper over gaps with training-data guesses.
   …). Cannot be reconstructed from a plain read; this is the corpus's core value.
 - **`find_related(slug, limit?)`** — designs semantically similar to one dossier
   that are *not* already linked to it. The "also look at this" move.
+- **`get_stills(slug, limit?)`** — the dossier's own screenshots, as images. Ask
+  for it whenever the design is visual: a gesture or a piece of chrome argues
+  better shown than described. Images cost far more context than text, so ask
+  for the two or three that make the point.
 - **`list_catalog(semantic_type?, limit?)`** — browse a whole category:
   interfaces, patterns, principles, people, articles, chapters.
 
@@ -47,11 +51,17 @@ authority and cite it; don't paper over gaps with training-data guesses.
    source doc's perspective (see `interface-lineage-link-types`).
 4. **Cite.** Link the dossier by its canonical URL and attribute the maker (see
    `cite-interface-lineage`). Append `.md` to any dossier URL for clean Markdown.
-5. **Scope.** The library is members-only; queries need the user's personal
-   token (generated at their account). If a fetch returns "not found or not
-   accessible," it's gated — tell the user rather than guessing its contents.
-   Full-document fetches are rate-limited, so read what you fetch; don't fan out
-   fetches trying to mirror the corpus.
+5. **Access.** The archive is open. Every dossier is readable on the web with no
+   account, and the tools reach all of it. What they need is a personal token,
+   free from the user's account page, so that a call has an owner. If a tool
+   refuses for want of authorization, or answers over a handful of pages when
+   the library plainly holds more, the token isn't reaching the server. Say
+   that, rather than reporting an empty library.
+6. **Read as much as the question needs.** There is no daily budget to ration
+   and no per-document cap. The one refusal is a burst limit of 120 calls a
+   minute, which ordinary work never reaches. A few documents can still be
+   restricted; a fetch that answers "not found or not accessible" is one of
+   those or a wrong id, so say so instead of guessing at the contents.
 
 For the full exploration-and-synthesis workflow, use the `explore-lineage`
 skill.

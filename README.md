@@ -8,10 +8,15 @@ embody, the people who made them, and the typed lineage between them.
 Ask questions in Claude or Cursor and get answers pulled from live examples in
 the library instead of averaged-out training data.
 
+The archive is open: every dossier is on the web, free to read, no account. What
+this adds is the reading itself, done by the agent, plus the hand-authored
+lineage graph that no crawl reconstructs.
+
 ## Install
 
 First, generate a personal token at <https://interfacelineage.com/account> (open
-the MCP access section and press copy). You'll paste it during install.
+the MCP access section and press copy). You'll paste it during install. Sign-in
+is by email, no password, and every account gets a token free.
 
 Then, **inside Claude Code** — these are slash commands typed at the Claude Code
 prompt, not in your terminal:
@@ -43,8 +48,8 @@ For Claude Desktop, Cursor, and Codex, see the per-host setup at
 
 ## What's inside
 
-**MCP tools** — `search`, `fetch`, `get_lineage`, `find_related`, `list_catalog`
-(read-only, scoped to what your token can see).
+**MCP tools** — `search`, `fetch`, `get_lineage`, `find_related`, `get_stills`,
+`list_catalog`. All read-only.
 
 **Skills**
 
@@ -56,6 +61,6 @@ For Claude Desktop, Cursor, and Codex, see the per-host setup at
   edge direction.
 
 See [plugins/interface-lineage/README.md](plugins/interface-lineage/README.md)
-for details. The tools are read-only; a token scopes results to exactly what its
-owner can see on the site, and is revocable at
-<https://interfacelineage.com/account>.
+for details. Results pass through the same permission check the website uses, so
+an agent sees what its token's owner sees in a browser. Generating a fresh token
+at <https://interfacelineage.com/account> replaces the old one.

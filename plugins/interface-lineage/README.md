@@ -17,7 +17,9 @@ prompt — not in your terminal.
 
 Generate a personal token at <https://interfacelineage.com/account> (open the MCP
 access section and press copy) and paste it when the plugin prompts for
-`api_token`. It connects the plugin to your membership.
+`api_token`. Sign-in is by email, no password, and every account gets a token
+free. Reading the archive in a browser needs no account at all; the token is
+what gives a tool call an owner.
 
 ## Connect without the plugin
 
@@ -42,6 +44,7 @@ For Claude Desktop, Cursor, and Codex, see the per-host setup at
 | `fetch` | The full dossier as Markdown, plus its lineage. |
 | `get_lineage` | The explicit typed influence edges for a dossier. |
 | `find_related` | Designs similar in feel that aren't already linked. |
+| `get_stills` | The dossier's own screenshots, as images. |
 | `list_catalog` | Sample a category (interfaces, principles, people, …). |
 
 **Skills**
@@ -58,6 +61,13 @@ that surface MCP prompts get the same workflow without installing the skills.
 
 ## Privacy & scope
 
-The tools are read-only, rate-limited to prevent bulk export, and scope results
-to exactly what the token's owner can see on the website. Tokens are revocable
-(regenerate) at <https://interfacelineage.com/account>.
+The tools are read-only. Results pass through the same permission check the
+website uses, so an agent sees exactly what its token's owner sees in a browser,
+which is the open archive plus anything restricted to them.
+
+One refusal exists: a burst cap of 120 calls a minute. It protects a single
+server rather than the corpus, since every dossier is public and already
+downloadable without a token. Heavy readers are the point.
+
+Generating a fresh token at <https://interfacelineage.com/account> replaces the
+old one, which stops working immediately.
