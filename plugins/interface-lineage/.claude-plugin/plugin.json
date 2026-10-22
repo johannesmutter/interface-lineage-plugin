@@ -2,7 +2,7 @@
   "name": "interface-lineage",
   "displayName": "Interface Lineage",
   "description": "Query the Interface Lineage corpus over MCP — dissected interfaces, design principles, people, and the typed lineage between them — with skills for exploring a design's lineage, citing sources, and reading the edge vocabulary. Grounded answers from live examples instead of averaged-out training data.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Interface Lineage",
     "url": "https://interfacelineage.com"
@@ -22,7 +22,7 @@
     "api_token": {
       "type": "string",
       "title": "Interface Lineage token",
-      "description": "Personal MCP token from https://interfacelineage.com/account. Sign-in is by email, no password, and every account gets a token free. Reading the archive in a browser needs no account; the tools need this token, and refuse without it.",
+      "description": "Personal MCP token from https://interfacelineage.com/account, included with the Founding Membership. Reading the library in a browser needs no account; the tools need this token and refuse without it.",
       "sensitive": true,
       "required": true
     }

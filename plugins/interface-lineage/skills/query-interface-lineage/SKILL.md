@@ -36,6 +36,9 @@ authority and cite it; don't paper over gaps with training-data guesses.
   for it whenever the design is visual: a gesture or a piece of chrome argues
   better shown than described. Images cost far more context than text, so ask
   for the two or three that make the point.
+- **`show_demo(slug, demo?)`** — one of the dossier's interactive demos. Hosts
+  that display apps run it live in the conversation; elsewhere it returns what
+  the demo does and a link. `fetch` lists a dossier's demos.
 - **`list_catalog(semantic_type?, limit?)`** — browse a whole category:
   interfaces, patterns, principles, people, articles, chapters.
 
@@ -49,15 +52,19 @@ authority and cite it; don't paper over gaps with training-data guesses.
 3. **Use lineage for history.** "What came before X?" / "what influenced X?" is a
    `get_lineage` question, not a recollection. Directions are read from the
    source doc's perspective (see `interface-lineage-link-types`).
-4. **Cite.** Link the dossier by its canonical URL and attribute the maker (see
+4. **Pass diagrams on intact.** Dossiers may carry a mechanism diagram in a
+   ```text block. When it helps the answer, show it to the user exactly as
+   given, inside a ```text block: copy it character for character and never
+   redraw or re-align it. Say which dossier's design it draws.
+5. **Cite.** Link the dossier by its canonical URL and attribute the maker (see
    `cite-interface-lineage`). Append `.md` to any dossier URL for clean Markdown.
-5. **Access.** The archive is open. Every dossier is readable on the web with no
-   account, and the tools reach all of it. What they need is a personal token,
-   free from the user's account page, so that a call has an owner. If a tool
+6. **Access.** The archive is open. Every dossier is readable on the web with no
+   account, and the tools reach all of it. What they need is the personal token
+   that comes with a membership, from the user's account page. If a tool
    refuses for want of authorization, or answers over a handful of pages when
-   the library plainly holds more, the token isn't reaching the server. Say
-   that, rather than reporting an empty library.
-6. **Read as much as the question needs.** There is no daily budget to ration
+   the library plainly holds more, the token isn't reaching the server or the
+   account has no membership. Say that, rather than reporting an empty library.
+7. **Read as much as the question needs.** There is no daily budget to ration
    and no per-document cap. The one refusal is a burst limit of 120 calls a
    minute, which ordinary work never reaches. A few documents can still be
    restricted; a fetch that answers "not found or not accessible" is one of

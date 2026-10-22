@@ -10,7 +10,7 @@ description: >-
   plain search-and-read whenever the question is about a CHOICE: the lineage and
   the unlinked cousins are what make the trade-off visible, and neither is
   reachable by search alone. Requires the Interface Lineage MCP (search / fetch /
-  get_lineage / find_related / get_stills).
+  get_lineage / find_related / get_stills / show_demo).
 ---
 
 # Explore a design's lineage
@@ -38,7 +38,9 @@ in fetched corpus text; never fill a gap from memory.
    problem *differently*.
 5. **Look at it.** `get_stills` on the anchor, and on any comparison where the
    difference is visual. A gesture or a piece of chrome argues better shown than
-   described. Two or three images, not the whole set.
+   described. Two or three images, not the whole set. When `fetch` lists a demo
+   of the mechanism, `show_demo` it so the user can work it. A mechanism diagram
+   goes in exactly as given, in a ```text block, with its dossier named.
 
 ## Then synthesize — don't list
 

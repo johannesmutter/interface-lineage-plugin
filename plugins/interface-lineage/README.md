@@ -15,11 +15,11 @@ averaged-out training data.
 The two lines above are slash commands typed **inside Claude Code**, at its
 prompt — not in your terminal.
 
-Generate a personal token at <https://interfacelineage.com/account> (open the MCP
-access section and press copy) and paste it when the plugin prompts for
-`api_token`. Sign-in is by email, no password, and every account gets a token
-free. Reading the archive in a browser needs no account at all; the token is
-what gives a tool call an owner.
+Copy your personal token from <https://interfacelineage.com/account> (open the
+MCP access section and press copy) and paste it when the plugin prompts for
+`api_token`. The token comes with the
+[Founding Membership](https://interfacelineage.com/members). Reading the library
+in a browser needs no account.
 
 ## Connect without the plugin
 
@@ -31,8 +31,8 @@ claude mcp add --transport http interface-lineage https://interfacelineage.com/m
   --header "Authorization: Bearer YOUR_TOKEN"
 ```
 
-For Claude Desktop, Cursor, and Codex, see the per-host setup at
-<https://interfacelineage.com/connect>.
+For Claude on the web and in its apps, ChatGPT, Cursor and Codex, see the per-host setup at
+<https://interfacelineage.com/connect-mcp>.
 
 ## What's inside
 
@@ -45,6 +45,7 @@ For Claude Desktop, Cursor, and Codex, see the per-host setup at
 | `get_lineage` | The explicit typed influence edges for a dossier. |
 | `find_related` | Designs similar in feel that aren't already linked. |
 | `get_stills` | The dossier's own screenshots, as images. |
+| `show_demo` | One of the dossier's interactive demos, live in hosts that display apps. |
 | `list_catalog` | Sample a category (interfaces, principles, people, …). |
 
 **Skills**

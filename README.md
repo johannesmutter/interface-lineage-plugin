@@ -14,9 +14,10 @@ lineage graph that no crawl reconstructs.
 
 ## Install
 
-First, generate a personal token at <https://interfacelineage.com/account> (open
-the MCP access section and press copy). You'll paste it during install. Sign-in
-is by email, no password, and every account gets a token free.
+First, copy your personal token from <https://interfacelineage.com/account>
+(open the MCP access section and press copy). You'll paste it during install.
+The token comes with the [Founding Membership](https://interfacelineage.com/members);
+reading the library in a browser needs none.
 
 Then, **inside Claude Code** — these are slash commands typed at the Claude Code
 prompt, not in your terminal:
@@ -43,13 +44,13 @@ claude mcp add --transport http interface-lineage https://interfacelineage.com/m
   --header "Authorization: Bearer YOUR_TOKEN"
 ```
 
-For Claude Desktop, Cursor, and Codex, see the per-host setup at
-<https://interfacelineage.com/connect>.
+For Claude on the web and in its apps, ChatGPT, Cursor and Codex, see the per-host setup at
+<https://interfacelineage.com/connect-mcp>.
 
 ## What's inside
 
 **MCP tools** — `search`, `fetch`, `get_lineage`, `find_related`, `get_stills`,
-`list_catalog`. All read-only.
+`show_demo`, `list_catalog`. All read-only.
 
 **Skills**
 
